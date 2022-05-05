@@ -11,7 +11,9 @@ Directories
 =======
 
 src: the source code directory (files used for generete the DLL)
+
 examples: directory with examples of how to use the source code
+
 release: directory with the updated DLL, ready to be used
 
 Authors
