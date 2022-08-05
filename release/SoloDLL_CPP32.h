@@ -6,7 +6,7 @@
 *    Author: SOLOMotorControllers
 *    Date: 2022
 *    Code version: 0.0.0
-*    Availability: https://github.com/Solo-FL/SOLO-motor-controllers-DLL
+*    Availability: https://github.com/Solo-FL/SOLO-motor-controllers-CPP-library
 This Library is made by SOLOMotorControllers.com
 To learn more please visit:  https://www.SOLOMotorControllers.com/
 */
@@ -17,21 +17,24 @@ To learn more please visit:  https://www.SOLOMotorControllers.com/
 #include <tchar.h>
 #include <stdio.h>
 
+//DLL BLOCK
 #ifdef SOLOLIBRARY_EXPORTS
 #define SOLOLIBRARY_API __declspec(dllexport)
 #else
 #define SOLOLIBRARY_API __declspec(dllimport)
 #endif
+//DLL need SOLOLIBRARY_API in the definitions too
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
-class SOLODLLCPP {
+class SOLOMotorControllers {
 
 private:
 	UINT8 addr = 0;
+	char* portName;
 	bool isConnected = false;
 	HANDLE hComm;
 	UINT32 baudrate;
@@ -49,11 +52,11 @@ private:
 
 public:
 
-	//SOLODLLCPP();
+	//SOLOMotorControllers();
 
-	SOLOLIBRARY_API SOLODLLCPP(unsigned char _addr = 0, long _baudrate = 115200, long _millisecondsTimeout = 50, int _packetFailureTrialAttempts = 3);
+	SOLOLIBRARY_API SOLOMotorControllers(unsigned char _addr = 0, long _baudrate = 115200, long _millisecondsTimeout = 50, int _packetFailureTrialAttempts = 3);
 
-	SOLOLIBRARY_API ~SOLODLLCPP();
+	SOLOLIBRARY_API ~SOLOMotorControllers();
 
 	enum SOLOMotorControllersError
 	{
@@ -119,6 +122,8 @@ public:
 	};
 
 SOLOLIBRARY_API bool serialSetup(unsigned char _addr, char* _portName, long _baudrate, long _millisecondsTimeout = 200, int _packetFailureTrialAttempts = 5);
+
+SOLOLIBRARY_API boolean Connect();
 
 SOLOLIBRARY_API void Disconnect();
 
@@ -234,9 +239,9 @@ SOLOLIBRARY_API bool SetCurrentControllerKi(float currentControllerKi, int& erro
 
 SOLOLIBRARY_API bool SetCurrentControllerKi(float currentControllerKi);
 
-SOLOLIBRARY_API bool SetMonitoringMode(bool mode, int& error);
+SOLOLIBRARY_API bool SetMonitoringMode(SOLOLIBRARY_API bool mode, int& error);
 
-SOLOLIBRARY_API bool SetMonitoringMode(bool mode);
+SOLOLIBRARY_API bool SetMonitoringMode(SOLOLIBRARY_API bool mode);
 
 SOLOLIBRARY_API bool SetMagnetizingCurrentIdReference(float magnetizingCurrentIdReference, int& error);
 

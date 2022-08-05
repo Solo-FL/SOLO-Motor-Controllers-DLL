@@ -1,2 +1,0 @@
-- run .\build_exe.bat in terminal to build dllTest.exe file
-- run .\dllTest.exe to test the example
