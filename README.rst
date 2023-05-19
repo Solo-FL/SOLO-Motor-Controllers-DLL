@@ -4,7 +4,7 @@
 SOLO Motor Controller DLL
 *******
 
-Communication DLL for SOLO Motor Controllers More information about it on `the SOLO website <https://www.solomotorcontrollers.com/>`_.
+Communication DLL for SOLO Motor Controllers More information about it on `the SOLO website <https://www.SOLOMotorControllers.com/>`_.
 The DLL is C++ based and 32bit or 64bit
 
 Directories

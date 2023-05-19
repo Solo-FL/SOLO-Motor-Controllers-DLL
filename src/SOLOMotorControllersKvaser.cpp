@@ -1,14 +1,14 @@
-// Copyright: (c) 2021, SOLO motor controllers project
+// Copyright: (c) 2021-2023, SOLO motor controllers project
 // GNU General Public License v3.0+ (see COPYING or https://www.gnu.org/licenses/gpl-3.0.txt)
 
 /*
-*    Title: SOLO Motor Controllers Arduino Library
+*    Title: SOLO Motor Controllers DLL
 *    Author: SOLOMotorControllers
 *    Date: 2023
 *    Code version: 1.0.0
-*    Availability: https://github.com/Solo-FL/SOLO-motor-controllers-ARDUINO-library
+*    Availability: https://github.com/Solo-FL/SOLO-Motor-Controllers-DLL
 
-This Library is made by SOLOMotorControllers.COM
+This Library is made by SOLOMotorControllers.com
 please visit:  https://www.SOLOMotorControllers.com/
 
 */
