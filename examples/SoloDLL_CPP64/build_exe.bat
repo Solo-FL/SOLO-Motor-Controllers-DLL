@@ -1,1 +1,0 @@
-g++ -o dllTest.exe dllTest.cpp -L. -lSoloDLL_CPP64

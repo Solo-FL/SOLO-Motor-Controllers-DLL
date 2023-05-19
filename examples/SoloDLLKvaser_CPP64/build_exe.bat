@@ -1,0 +1,1 @@
+g++ -o dllTestKvaser64.exe test3.cpp -I inc -L ../../release/Kvaser/x64 -lSoloDLLKvaser_CPP64

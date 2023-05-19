@@ -4,8 +4,8 @@
 /*
 *    Title: SOLO Motor Controllers DLL
 *    Author: SOLOMotorControllers
-*    Date: 2022
-*    Code version: 0.0.0
+*    Date: 2023
+*    Code version: 1.0.0
 *    Availability: https://github.com/Solo-FL/SOLO-motor-controllers-DLL
 This Library is made by SOLOMotorControllers.com
 To learn more please visit:  https://www.SOLOMotorControllers.com/

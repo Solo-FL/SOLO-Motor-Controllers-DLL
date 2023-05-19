@@ -1,0 +1,1 @@
+g++ -m32 -o dllTestKvaser32.exe test3.cpp -I inc -L ../../release/Kvaser/x86 -lSoloDLLKvaser_CPP32 
